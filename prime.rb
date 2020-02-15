@@ -20,6 +20,6 @@ def another_prime?(num)
 end
 
 Benchmark.bm(10) do |x|
-  x.report('Prime: ') { prime?(41) }
-  x.report('Another prime:') { another_prime?(41) }
+  x.report('Prime: ') { prime?(97) }
+  x.report('Another prime:') { another_prime?(97) }
 end
