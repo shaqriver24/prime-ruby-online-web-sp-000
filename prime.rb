@@ -6,6 +6,18 @@ def prime?(int)
   true
 end
 
+def another_prime?(num)
+  if num < 2
+    return false
+  end
+
+  (2...num).each do |num1|
+    if num % num1 == 0
+      return false
+    end
+  end
+  return true
+end
 
 Benchmark.bm(10) do |x|
   x.report('Each: ') {prime?(41)}
