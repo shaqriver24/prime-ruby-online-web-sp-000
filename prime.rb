@@ -2,7 +2,7 @@ require 'benchmark'
 # Add  code here!
 def prime?(int)
   return false if int < 2
-  (2...int).each { |num| return false if int % num == 0 }
+  (2...int).each { |int1| return false if int % int1 == 0 }
   true
 end
 
