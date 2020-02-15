@@ -5,4 +5,7 @@ def prime?(int)
   true
 end
 
-prime?(41)
+
+Benchmark.bm(10) do |x|
+  x.report('Each: ') {prime?(41)}
+end
