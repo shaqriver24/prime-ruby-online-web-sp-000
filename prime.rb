@@ -1,3 +1,4 @@
+require 'benchmark'
 # Add  code here!
 def prime?(int)
   return false if int < 2
