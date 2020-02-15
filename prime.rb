@@ -2,8 +2,12 @@ require 'benchmark'
 # Add  code here!
 def prime?(int)
   return false if int < 2
-  (2...int).each { |num| return false if int % num == 0 }
-  true
+  (2...num).each do |num1|
+    if num % num1 == 0
+      return false
+    end
+  end
+  return true
 end
 
 def another_prime?(num)
